@@ -112,10 +112,10 @@ let correctAnswers = 0;
 function questionPage(correctAnswers, question, questionsAnswered) {
   return `
     <section id="question-page" role="form">
-    <h2 id="question">${question.text}</h2>
+    <h2 class="question">${question.text}</h2>
     
     <form>
-      <fieldset>
+      <fieldset class="options">
         <label>
           <input class="answer" type="radio" name="option" checked></input>
           <span>${question.ans1}</span>
@@ -190,8 +190,8 @@ function returnCorrectFeedback() {
 
 const correctFeedback = `
   <section class="feedback-page" role="main">
-    <h2>Affirmative!</h2>
-    <img src="https://media.giphy.com/media/msKNSs8rmJ5m/giphy.gif" class=feedbackImg alt="Data celebrating">
+    <h2 id="affirmative">Affirmative!</h2>
+    <img src="https://media.giphy.com/media/msKNSs8rmJ5m/giphy.gif" id=yesFeedbackImg alt="Data celebrating">
     <button id="js-next-button">Next</button>
   </section>
 `;
@@ -203,8 +203,8 @@ function returnIncorrectFeedback() {
 function incorrectFeedbackTemplate(questionNum) {
   return `
     <section class="feedback-page" role="main">
-      <h2>Negative! The answer you're looking for is "${solutions[questionNum - 1]}"</h2>
-      <img src="https://media.giphy.com/media/u4PP8qvsj5i1O/giphy.gif" class="feedbackImg" alt="Wesley Crusher facepalm">
+      <h2 id="negative">Negative! The answer you're looking for is "${solutions[questionNum - 1]}"</h2>
+      <img src="https://media.giphy.com/media/u4PP8qvsj5i1O/giphy.gif" id="noFeedbackImg" alt="Wesley Crusher facepalm">
       <button id="js-next-button">Next</button>
     </section>
 `;
