@@ -111,10 +111,11 @@ let correctAnswers = 0;
 
 function questionPage(correctAnswers, question, questionsAnswered) {
   return `
-    <section id="question-page" role="form">
-    <h2 class="question">${question.text}</h2>
-    
+    <section id="question-page" role="form">    
     <form>
+      <legend>
+        <h2 class="question">${question.text}</h2>
+      </legend>
       <fieldset class="options">
         <label>
           <input class="answer" type="radio" name="option" checked></input>
