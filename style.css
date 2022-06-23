@@ -11,7 +11,7 @@ html {
   background: linear-gradient(
   rgba(20,20,20, .5), 
   rgba(20,20,20, .5)),
-    url("https://wallpaperplay.com/walls/full/7/6/5/81879.jpg");
+    url("p6fjmk.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -26,16 +26,16 @@ h1, h2 {
 }
 
 #intro {
-  font-size: 5vmin;
+  font-size: 7vmin;
   display:block;
   text-align:left;
   height:40%;
-  width:30%;
+  width:60%;
   position:absolute;
-  top: 33%;
-  left: 10%;
-  line-height: 60px;
-  letter-spacing:4px;
+  top: 38%;
+  left: 25%;
+  line-height: 100px;
+  letter-spacing:5px;
   }
 
 button {
@@ -43,15 +43,15 @@ button {
   line-height:5px;
   color: white;
   font-family: 'Orbitron', sans-serif;
-  font-size: 4vmin;
+  font-size: 5vmin;
   height: 120px;
   width: 250px;
   text-align:center;
-  margin-top:0px;
+  margin-top:15px;
   padding:15px;
   border:1px solid gray;
   border-radius: 5px;
-  background-color: chocolate;
+  background-color: rgb(57, 53, 50);
 }
 
 #js-engage-button {
@@ -72,27 +72,29 @@ button:hover {
 }
 
 .question {
-  height: 50%;
-  width: 32%;
+  height: 100%;
+  width: 50%;
   line-height: 55px;
   letter-spacing:3px;
   position:absolute;
-  top:30%;
-  left:8%;
+  top:30px;
+  left:22%;
 	color: white;
-  font-size:4vmin;
+  font-size:5.5vmin;
 }
 
 .options {
 	display: flex;
   flex-direction:column;
+  letter-spacing:2px;
   position:absolute;
-  left: 66%;
+  left: 20%;
+  right: 20%;
   top:35%;
-  bottom:25%;
+  bottom:15%;
 	border: none;
   color:white;
-  font-size: 2.9vmin;
+  font-size: 4vmin;
 }
 
 label {
@@ -102,21 +104,22 @@ label {
 
 #js-submit-button {
   position:absolute;
-  bottom:30%;
+  bottom:10%;
   left:40%;
   border-radius: 5%;
-  width:180px;
+  width:380px;
 }
 
 #progress {
   display:flex;
+  color: rgb(17, 8, 55);
   flex-direction:column;
   justify-content:space-between;
-  font-size:3.5vmin;
+  font-size:2.5vmin;
   position:absolute;
-  text-align:center;
-  left:41%;
-  bottom:10%;
+  text-align:right;
+  left:2px;
+  bottom:5%;
 }
 
 .analysis {
@@ -124,7 +127,7 @@ label {
   width:30%;
   position:absolute;
   top:35%;
-  left:10%;
+  left:20%;
   font-size:4vmin;
 }
 
@@ -144,7 +147,7 @@ label {
 	position: absolute;
   bottom:30%;
   font-size:3vmin;
-  left:15%;
+  left:20%;
   line-height:20px;
   height:80px;
 }
@@ -157,7 +160,7 @@ label {
 #yesFeedbackImg {
   display: block;
   position:absolute;
-  top:35%;
+  top:55%;
   width: 100%;
   height:auto;
   }
@@ -165,16 +168,16 @@ label {
 #noFeedbackImg {
   display: block;
   position:absolute;
-  top:35%;
+  top:55%;
   width: 100%;
   height:auto;
   }
 
 #negative {
 	width: 99%;
-  font-size:4vmin;
+  font-size:6vmin;
   position:absolute;
-  top:21%;
+  top:41%;
   text-align:center;
 	margin-bottom: 15px;
   background:black;
@@ -183,9 +186,9 @@ label {
 
 #affirmative {
 	width: 99%;
-  font-size:4vmin;
+  font-size:6vmin;
   position:absolute;
-  top:23%;
+  top:41%;
   text-align:center;
 	margin-bottom: 10px;
   background:black;
@@ -202,30 +205,44 @@ form {
 @media only screen and (min-width: 600px) {
 
   button {
-    height:50px;
-    width:200px;
-    font-size:4vmin;
+    height:110px;
+    width:400px;
+    font: size 6vmin;
+  }
+
+  .question {
+    height: 90%;
+    width: 53%;
+    font-size:4.5vmin;
+  }
+
+  #js-submit-button {
+    position:absolute;
+    bottom:7%;
+    left:40%;
+    border-radius: 5%;
+    width:380px;
   }
 
   #noFeedbackImg {
-    top:40%;
-    width: 40%;
+    top:50%;
+    left:20%;
+    width: 60%;
     height:auto;
     position:absolute;
-    left:30%;
   }
 
   #yesFeedbackImg {
-    top:40%;
-    width: 40%;
+    top:50%;    
+    left:20%;
+    width: 60%;
     height:auto;
     position:absolute;
-    left:30%;
   }
 
   #js-next-button {
     position:absolute;
-    bottom:15%;
+    bottom:7%;
     left:42%;
     border-radius: 5%;
     width:180px;
@@ -235,7 +252,7 @@ form {
     width: 100%;
     font-size:4vmin;
     position:absolute;
-    top:18%;
+    top:38%;
     text-align:center;
     margin-bottom: 15px;
     padding:10px;
@@ -245,7 +262,7 @@ form {
     width: 100%;
     font-size:4vmin;
     position:absolute;
-    top:18%;
+    top:38%;
     text-align:center;
     margin-bottom: 15px;
     padding:10px;
@@ -262,11 +279,26 @@ form {
     font-size:5vmin;
   }
 
+  .options {
+    display: flex;
+    flex-direction:column;
+    letter-spacing:2px;
+    position:absolute;
+    left: 20%;
+    right: 40%;
+    top:35%;
+    bottom:15%;
+    border: none;
+    color:white;
+    font-size: 4vmin;
+  }
+
   #js-submit-button {
     width:280px;
     height:70px;
     font-size:5vmin;
-    left:38%;
+    bottom:40%;
+    left:60%;
   }
 
   #noFeedbackImg {
@@ -311,6 +343,11 @@ form {
     text-align:center;
     margin-bottom: 15px;
     padding:10px;
+  }
+
+  #progress {
+    left:10px;
+    bottom:5%;
   }
 
 }

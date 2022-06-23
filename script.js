@@ -142,8 +142,8 @@ function questionPage(correctAnswers, question, questionsAnswered) {
     </form>
 
     <div id="progress">
-      <span id="question-count">Question: ${question.number}/10</span>
-      <span id="score-count">Score: ${correctAnswers}/${questionsAnswered}</span>
+      <span id="question-count">QUESTION: ${question.number}/10</span>
+      <span id="score-count">SCORE: ${correctAnswers}/${questionsAnswered}</span>
     </div>
   </section>
   `;
